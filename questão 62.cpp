@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int main() {
-   int Nalun,N1,N2,Med,Contr = 0,Tnota = 1;
+   int Nalun,N1,N2,Contr = 0,Tnota = 1;
+   float Med;
    
    printf("Digite o numero de alunos em sua classe: ");
    scanf("%d",&Nalun);
@@ -31,9 +32,9 @@ int main() {
         Contr += 1;
    }
    
-     Med = Tnota / Nalun;
+     Med = (float) Tnota / Nalun;
    
-    printf("A media foi %d",Med);
+    printf("A media foi %.2f",Med);
    
     return 0;
 }
